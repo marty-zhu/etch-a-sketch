@@ -12,7 +12,7 @@ div.container {
     grid-template-columns: repeat(16, 1fr);
 }
 
-div.pixel {
+.pixel {
     background-color: ivory;
     height: 1rem;
     width: 1rem;
