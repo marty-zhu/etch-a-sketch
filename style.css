@@ -21,7 +21,7 @@ div.canvas {
     grid-template-columns: repeat(var(--canvas-side-width, 16), 1fr);
     justify-items: center;
     justify-content: center;
-    width: var(--canvas-side-width, 16)*1rem;
+    width: calc(var(--canvas-side-width)*1rem);
 }
 
 .pixel {
