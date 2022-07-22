@@ -17,3 +17,7 @@ div.pixel {
     height: 1rem;
     width: 1rem;
 }
+
+.active {
+    background-color: black;
+}
