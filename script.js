@@ -1,5 +1,4 @@
 const container = document.querySelector('div.container');
-const canvas = document.querySelector('div.canvas');
 const rootCanvasWidth = document.querySelector(':root');
 
 let sideWidthString = prompt("What size would you like for the canvas? (width only)");
@@ -9,6 +8,9 @@ if (sideWidth > 100) { sideWidth = 100; };
 let totalNumPixel = sideWidth**2;
 
 rootCanvasWidth.style.setProperty('--canvas-side-width', sideWidth);
+
+const canvas = document.createElement('div');
+canvas.classList.add('canvas');
 
 for (let n = 0; n < totalNumPixel; n++) {
     const grid = document.createElement('div');
@@ -20,3 +22,5 @@ for (let n = 0; n < totalNumPixel; n++) {
 
     canvas.appendChild(grid);
 };
+
+container.appendChild(canvas);
