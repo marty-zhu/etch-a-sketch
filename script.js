@@ -1,3 +1,4 @@
+const container = document.querySelector('div.container');
 const canvas = document.querySelector('div.canvas');
 const rootCanvasWidth = document.querySelector(':root');
 
