@@ -1,3 +1,7 @@
+:root {
+    --canvas-side-width: 16;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,15 +13,18 @@ body {
 
 div.container {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(var(--canvas-side-width, 16), 1fr);
+    justify-items: center;
+    justify-content: center;
+    width: var(--canvas-side-width, 16)*1rem;
 }
 
 .pixel {
-    background-color: ivory;
+    background: ivory;
     height: 1rem;
     width: 1rem;
 }
 
 .active {
-    background-color: black;
+    background: black;
 }
