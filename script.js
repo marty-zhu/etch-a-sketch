@@ -12,7 +12,6 @@ rootCanvasWidth.style.setProperty('--canvas-side-width', sideWidth);
 for (let n = 0; n < totalNumPixel; n++) {
     const grid = document.createElement('div');
     grid.classList.add('pixel');
-    // grid.textContent = n + 1;
 
     grid.addEventListener('mouseover', () => {
         grid.classList.add('active');
