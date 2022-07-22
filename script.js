@@ -1,7 +1,6 @@
 const container = document.querySelector('div.container');
 const rootCanvasWidth = document.querySelector(':root');
 
-// TODO: figure out why this is not working
 function setCanvas() {
     let sideWidthString = prompt("What size would you like for the canvas? (width only)");
     let sideWidth = parseInt(sideWidthString);
