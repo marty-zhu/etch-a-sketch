@@ -1,4 +1,4 @@
-const container = document.querySelector('div.container');
+const canvas = document.querySelector('div.canvas');
 const rootCanvasWidth = document.querySelector(':root');
 
 let sideWidthString = prompt("What size would you like for the canvas? (width only)");
@@ -17,5 +17,5 @@ for (let n = 0; n < totalNumPixel; n++) {
         grid.classList.add('active');
     })
 
-    container.appendChild(grid);
+    canvas.appendChild(grid);
 };

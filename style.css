@@ -8,12 +8,15 @@
 }
 
 body {
-    display: grid;
     box-sizing: border-box;
-    justify-content: center;
 }
 
 div.container {
+    display: grid;
+    justify-content: center;
+}
+
+div.canvas {
     display: grid;
     grid-template-columns: repeat(var(--canvas-side-width, 16), 1fr);
     justify-items: center;
