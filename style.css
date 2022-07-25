@@ -21,7 +21,8 @@ div.container {
 div.canvas {
     display: grid;
     grid-template-columns: repeat(var(--canvas-side-width), 1fr);
-    justify-items: center;
+    grid-template-rows: repeat(var(--canvas-side-width), 1fr);
+    justify-items: stretch;
     justify-content: center;
     border: 1px solid crimson;
     border-radius: 1%;
@@ -37,8 +38,8 @@ div.canvas {
     background: ivory;
     min-height: 1px;
     min-width: 1px;
-    height: calc(var(--pixel-width)*1px);
-    width: calc(var(--pixel-width)*1px);
+    /* height: calc(var(--pixel-width)*1px);
+    width: calc(var(--pixel-width)*1px); */
 }
 
 .active {
