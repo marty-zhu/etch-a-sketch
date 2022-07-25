@@ -38,8 +38,6 @@ div.canvas {
     background: ivory;
     min-height: 1px;
     min-width: 1px;
-    /* height: calc(var(--pixel-width)*1px);
-    width: calc(var(--pixel-width)*1px); */
 }
 
 .active {
