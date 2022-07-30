@@ -2,6 +2,10 @@ const container = document.querySelector('div.container');
 const rootCanvasWidth = document.querySelector(':root');
 const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 
+function genRandInt() {
+    return Math.floor(Math.random() * 255);
+}
+
 function setCanvas() {
     let sideWidthString = prompt("What size would you like for the canvas? (width only)");
     let sideWidth = parseInt(sideWidthString);
