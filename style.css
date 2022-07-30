@@ -13,8 +13,16 @@ body {
 }
 
 div.container {
-    display: grid;
+    display: flex;
     justify-content: center;
+    gap: 3rem;
+}
+
+div.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
 }
 
 /* TODO: fix grid overflowing canvas issue */
